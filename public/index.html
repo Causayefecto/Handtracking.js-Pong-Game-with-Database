@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Handtracking.js Pong Game causa&efecto basado en el juego de Victor Dibia</title>
+    <link rel="stylesheet" href="https://unpkg.com/carbon-components@latest/css/carbon-components.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="pong.css">
+    
+</head>
+
+<body class="bx--body p20"> 
+    <div class="infordisplay ">
+        <div class="toprow">
+            <img src="logoBlanco.png" class="icon  floatleft " />
+            <div class="scorebox  iblock ">
+                causa&efecto
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="toprow">
+            <img src="http://victordibia.com/skyfall/icon.png" class="icon  floatleft " />
+            <div class="scorebox  iblock ">
+                <div class="scorevalue inscore"> 0 </div>
+                <div class="scorelabel inscore"> pts </div>
+                <div class="scoreadded inscore"> </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="toprow">
+            <img src="clock.png" class="icon  floatleft " />
+            <div class="scorebox  iblock ">
+                <div id="timer" class="timervalue inscore"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+        <div class="settingsswitches">
+            <div class=" ">
+                <div class="iblock floatleft">
+                    <label class="switch">
+                        <input type="checkbox" id="sound">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="  iblock soundofftext">sonido apagado</div>
+                <div class="clear"></div>
+            </div>
+
+        </div>
+
+        <div class="pausetext">
+            <div>Sonido (s) </div>
+            <div>Pausar (barra espaciadora) </div>
+        </div>
+
+        <div id="updatenote" class="updatenote mt10"> Cargando el modelo ..</div>
+        <button  id="trackbutton" class="bx--btn bx--btn--secondary mt10 trackbutton" type="button" disabled>
+                Iniciar
+              </button>
+
+
+    </div>
+    <video class="videobox canvasbox" autoplay="autoplay" id="myvideo"></video>
+  <canvas id="canvas" class="border canvasbox"></canvas>
+
+    <div class="pauseoverlay">
+        <div class="overlaycenter">
+            Cargando Modelo Handtrack.js ..
+        </div>
+    </div>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/planck-js/0.1.44/planck-with-testbed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handtrackjs@latest/dist/handtrack.min.js"> </script>
+    <script src="pong.js"></script>
+</body>
+
+</html>

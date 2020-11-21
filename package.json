@@ -1,0 +1,21 @@
+{
+  "name": "ponggamecye",
+  "version": "1.0.0",
+  "description": "fine dexterity and concentration test based on pong game developed by Victor Dibia (Handtrackjs) ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "dexterity",
+    "concentration",
+    "test"
+  ],
+  "author": "Federico Úsuga",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "handtrackjs": "0.0.13",
+    "nedb": "^1.8.0"
+  }
+}
